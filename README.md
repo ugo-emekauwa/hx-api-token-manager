@@ -19,7 +19,7 @@ After fulfilling the requirements listed in the [**Prerequisites**](https://gith
 
 ## How to Use:
 
-#### _Basic Functions_
+### _Basic Functions_
 The Cisco HyperFlex API Token Manager module contains seven functions for managing HyperFlex API tokens. Here are four core basic functions that provide the ability to obtain, refresh, validate and revoke API tokens.
 
 
@@ -80,7 +80,7 @@ The Cisco HyperFlex API Token Manager module contains seven functions for managi
 
 
 
-#### _Advanced Functions_
+### _Advanced Functions_
 The Cisco HyperFlex API Token Manager module contains three additional functions that provide the ability to automate the creation, validation and renewal of access tokens. Offline token use is also provided among other features.
 
 - ### Automated Management of Token Files
