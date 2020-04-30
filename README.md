@@ -23,7 +23,10 @@ After fulfilling the requirements listed in the [**Prerequisites**](https://gith
 The Cisco HyperFlex API Token Manager module contains seven functions for managing HyperFlex API tokens. Here are four core basic functions that provide the ability to obtain, refresh, validate and revoke API tokens.
 
 
-- ### Obtain Access Tokens - `obtain_token(ip,username,password)`
+- ### Obtain Access Tokens
+  ```py
+  obtain_token(ip,username,password)
+  ```
   This is a function that obtains a HyperFlex API access token.
   - **The Available Function Arguments**
     - **ip**: The targeted HyperFlex Connect or Cluster Management IP address. The value must be a string.
@@ -35,7 +38,10 @@ The Cisco HyperFlex API Token Manager module contains seven functions for managi
     A HyperFlex API access token, refresh token and token type that have been granted as key-value pairs in a dictionary.
 
 
-- ### Refresh Access Tokens - `refresh_token(ip,hx_api_token)`
+- ### Refresh Access Tokens
+  ```py
+  refresh_token(ip,hx_api_token)
+  ```
   This is a function that refreshes a HyperFlex API access token.
   - **The Available Function Arguments**
     - **ip**: The targeted HyperFlex Connect or Cluster Management IP address. The value must be a string.
@@ -49,7 +55,10 @@ The Cisco HyperFlex API Token Manager module contains seven functions for managi
     A HyperFlex API access token, refresh token and token type that have been granted as key-value pairs in a dictionary.
 
 
-- ### Validate Access Tokens - `validate_token(ip,hx_api_token,scope="READ")`
+- ### Validate Access Tokens
+  ```py
+  validate_token(ip,hx_api_token,scope="READ")
+  ```
   This is a function that validates a HyperFlex API access token.
   - **The Available Function Arguments**
     - **ip**: The targeted HyperFlex Connect or Cluster Management IP address. The value must be a string.
@@ -64,7 +73,10 @@ The Cisco HyperFlex API Token Manager module contains seven functions for managi
     The boolean value "True" is returned for a successful validation. The boolean value "False" is returned if the validation fails.
 
 
-- ### Revoke Tokens - `revoke_token(ip,hx_api_token)`
+- ### Revoke Tokens
+  ```py
+  revoke_token(ip,hx_api_token)
+  ```
   This is a function that revokes a HyperFlex API access token.
   - **The Available Function Arguments**
     - **ip**: The targeted HyperFlex Connect or Cluster Management IP address. The value must be a string.
