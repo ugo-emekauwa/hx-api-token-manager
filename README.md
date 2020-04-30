@@ -70,7 +70,7 @@ The Cisco HyperFlex API Token Manager module contains seven functions for managi
 
   - **What the Function Returns**
   
-    The boolean value "True" is returned for a successful validation. The boolean value "False" is returned if the validation fails.
+    The boolean value True is returned for a successful validation. The boolean value False is returned if the validation fails.
 
 
 - ### Revoke Tokens
