@@ -112,8 +112,8 @@ The Cisco HyperFlex API Token Manager module contains three additional functions
       - **"access_token"**: Returns a string value of only the access token.
       - **"refresh_token"**: Returns a string value of only the refresh token.
       - **"token_type"**: Returns a string value of only the token type.
-      - **"human_readable"**: Returns a string value of the HyperFlex API token file creation time in a human-readable format.
-      - **"unix_timestamp"**: Returns a string value of the HyperFlex API token file creation time in unix timestamp format.
+      - **"human_readable_time"**: Returns a string value of the HyperFlex API token file creation time in a human-readable format.
+      - **"unix_timestamp_time"**: Returns a string value of the HyperFlex API token file creation time in unix timestamp format.
       - **"source_module"**: Returns a string value of the source module used to create the HyperFlex API token file.
     - **overwrite**: The option to overwrite any pre-exisiting file at the provided file path value given to the 'file_path' argument. If the value is set to True, any pre-exiting token file will be automatically overwritten. If set to False, the manage_token_file function will stop and not proceed with creating a new token file if a pre-existing token file already exists. The default value is True.
     
@@ -158,8 +158,8 @@ The Cisco HyperFlex API Token Manager module contains three additional functions
       - **"access_token"**: Returns a string value of only the access token.
       - **"refresh_token"**: Returns a string value of only the refresh token.
       - **"token_type"**: Returns a string value of only the token type.
-      - **"human_readable"**: Returns a string value of the HyperFlex API token file creation time in a human-readable format.
-      - **"unix_timestamp"**: Returns a string value of the HyperFlex API token file creation time in unix timestamp format.
+      - **"human_readable_time"**: Returns a string value of the HyperFlex API token file creation time in a human-readable format.
+      - **"unix_timestamp_time"**: Returns a string value of the HyperFlex API token file creation time in unix timestamp format.
       - **"source_module"**: Returns a string value of the source module used to create the HyperFlex API token file.
 
   - **What the Function Returns**
