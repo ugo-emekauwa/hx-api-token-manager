@@ -85,7 +85,7 @@ The Cisco HyperFlex API Token Manager module contains seven functions for managi
       - **"refresh_token"**: A refresh token obtained from the HyperFlex API AAA (Authorization, Accounting and Authentication). The access token is used to authorize users for any API operations. The refresh token can be used to obtain a new access token without the need to re-provide HyperFlex username and password credentials.
       - **"token_type"**: A token type obtained from the HyperFlex API AAA (Authorization, Accounting and Authentication). The access token is used to authorize users for any API operations. This token type value should be of type "Bearer".
   
-  - **What the Function Returns**  
+  - **What the Function Returns**
     
     The boolean value True is returned for a successful revocation. The boolean value False is returned if the revocation fails.
 
@@ -114,6 +114,17 @@ The Cisco HyperFlex API Token Manager module contains three additional functions
       - **"unix_timestamp"**: Returns a string value of the HyperFlex API token file creation time in unix timestamp format.
       - **"source_module"**: Returns a string value of the source module used to create the HyperFlex API token file.
     - **overwrite**: The option to overwrite any pre-exisiting file at the provided file path value given to the 'file_path' argument. If the value is set to True, any pre-exiting token file will be automatically overwritten. If set to False, the manage_token_file function will stop and not proceed with creating a new token file if a pre-existing token file already exists. The default value is True.
+    
+  - **What the Function Returns**
+    
+    The return is based on the value of the data argument. If the default value of "token" is set, the access token, refresh token, and token type will be returned as a dictionary. See the following list to see the options available for the data argument and the returned value:
+      - **"token"**: Returns a dictionary with the access token, refresh token, and token type.
+      - **"access_token"**: Returns a string value of only the access token.
+      - **"refresh_token"**: Returns a string value of only the refresh token.
+      - **"token_type"**: Returns a string value of only the token type.
+      - **"human_readable_time"**: Returns a string value of the HyperFlex API token file creation time in a human-readable format.
+      - **"unix_timestamp_time"**: Returns a string value of the HyperFlex API token file creation time in unix timestamp format.
+      - **"source_module"**: Returns a string value of the source module used to create the HyperFlex API token file.
 
 
 - ### Creation of Token Files
