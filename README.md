@@ -128,6 +128,19 @@ The Cisco HyperFlex API Token Manager module contains three additional functions
 
 
 - ### Creation of Token Files
+  ```py
+  create_token_file(ip,username,password,file_path,overwrite=True)
+  ```
+  This is a function that creates a HyperFlex API token file.
+  - **The Available Function Arguments**
+    - ip: The targeted HyperFlex Connect or Cluster Management IP address. The value must be a string.
+    - username: The username credentials that will be used to log into HyperFlex. The value must be a string.
+    - password: The passsword credentials that will be used to log into HyperFlex. The value must be a string.
+    - file_path: The file name and storage location to write a HyperFlex API token file. The value must be a string. An example value is "c:\\folder\\file.xml".
+    - overwrite: The option to overwrite any pre-exisiting file at the provided file path value given to the 'file_path' argument. If the value is set to True, any pre-exiting token file will be automatically overwritten. If set to False, the create_token_file function will stop and not proceed with creating a new token file if a pre-existing token file already exists. The default value is True.
+    
+  - **What the Function Returns**
+    The file path of the new HyperFlex API token file in XML format is returned if creation was successful. The value None is returned if creating a HyperFlex API token file failed.
 
 
 - ### Loading Token Files
