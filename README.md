@@ -101,7 +101,7 @@ The Cisco HyperFlex API Token Manager module contains three additional functions
   ```py
   manage_token_file(ip,username,password,file_path,data="token",overwrite=True)
   ```
-  This is a function that loads data from a HyperFlex API token file and then validates the loaded token. If the loaded token is not valid, a new token will be obtained. If there is a no token file present in the provided file path, a new token file will be created.
+  The function _manage_token_file()_ creates or loads an XML file containing a HyperFlex API token and then validates the loaded token data. If the loaded HyperFlex API access token is not valid, a new access token will be automatically obtained. If there is a no HyperFlex API token file present in the provided file path, a new token file will be automatically created.
   - **The Available Function Arguments:**
     - **ip** - The targeted HyperFlex Connect or Cluster Management IP address. Setting the ip, username, and password arguments will enable the _manage_token_file()_ function to automatically generate a new HyperFlex API token and accompanying token file if the current token is expired or if the user provided file path is missing the token file. The default value is None. The user provided value must be a string.
     - **username** - The username credentials that will be used to log into HyperFlex. Setting the ip, username, and password arguments will enable the manage_token_file() function to automatically generate a new HyperFlex API token and accompanying token file if the current token is expired or if the user provided file path is missing the token file. The default value is None. The user provided value must be a string.
@@ -133,7 +133,7 @@ The Cisco HyperFlex API Token Manager module contains three additional functions
   ```py
   create_token_file(ip,username,password,file_path,overwrite=True)
   ```
-  This is a function that creates a HyperFlex API token file.
+  The function _create_token_file()_ creates an XML file containing a newly issued HyperFlex API token.
   - **The Available Function Arguments:**
     - **ip** - The targeted HyperFlex Connect or Cluster Management IP address. The value must be a string.
     - **username** - The username credentials that will be used to log into HyperFlex. The value must be a string.
@@ -150,7 +150,7 @@ The Cisco HyperFlex API Token Manager module contains three additional functions
   ```py
   load_token_file(file_path,data="token")
   ```
-  This is a function that loads data from a HyperFlex API token file.
+  The function _load_token_file()_ loads data from an XML file containing a HyperFlex API token.
   - **The Available Function Arguments:**
     - **file_path** - The file name and storage location from which to load a HyperFlex API token file. The value must be a string. An example value is `"c:\\folder\\file.xml"`.
     - **data** - The data from a HyperFlex API token file that is returned by the _load_token_file()_ function. The default value of `"token"` is set, which returns the access token, refresh token, and token type as a dictionary. The user provided value must be a string. See the following list for the options available for the data argument and the returned data:
