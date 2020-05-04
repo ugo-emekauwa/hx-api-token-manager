@@ -107,7 +107,7 @@ The Cisco HyperFlex API Token Manager module contains three additional functions
     - **username** - The username credentials that will be used to log into HyperFlex. The value must be a string.
     - **password** - The password credentials that will be used to log into HyperFlex. The value must be a string.
     - **file_path** - The file name and storage location to write a HyperFlex API token file. The value must be a string. An example value is `"c:\\folder\\file.xml"`.
-    - **data** - (Optional) The data from a HyperFlex API token file that is returned by the **_manage_token_file()_** function. Providing this argument is optional. The default value of `"token"` is set, which returns the access token, refresh token, and token type as a dictionary. The user provided value must be a string. See the following list for the options available for the **data** argument and the returned data:
+    - **data** - (Optional) The data from a HyperFlex API token file that is returned by the **_manage_token_file()_** function. Providing this argument is optional. The default value of `"token"` is set, which returns the access token, refresh token, and token type as a dictionary. The user provided value must be a string. See the following list for the options available for the **data** argument and the returned value:
       - `"token"` - Returns a dictionary with the access token, refresh token, and token type.
       - `"access_token"` - Returns a string value of only the access token.
       - `"refresh_token"` - Returns a string value of only the refresh token.
@@ -153,7 +153,7 @@ The Cisco HyperFlex API Token Manager module contains three additional functions
   The function **_load_token_file()_** loads data from an XML file containing a HyperFlex API token.
   - **The Available Function Arguments:**
     - **file_path** - The file name and storage location from which to load a HyperFlex API token file. The value must be a string. An example value is `"c:\\folder\\file.xml"`.
-    - **data** - (Optional) The data from a HyperFlex API token file that is returned by the **_load_token_file()_** function. Providing this argument is optional. The default value of `"token"` is set, which returns the access token, refresh token, and token type as a dictionary. The user provided value must be a string. See the following list for the options available for the **data** argument and the returned data:
+    - **data** - (Optional) The data from a HyperFlex API token file that is returned by the **_load_token_file()_** function. Providing this argument is optional. The default value of `"token"` is set, which returns the access token, refresh token, and token type as a dictionary. The user provided value must be a string. See the following list for the options available for the **data** argument and the returned value:
       - `"token"` - Returns a dictionary with the access token, refresh token, and token type.
       - `"access_token"` - Returns a string value of only the access token.
       - `"refresh_token"` - Returns a string value of only the refresh token.
