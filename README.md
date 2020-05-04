@@ -115,7 +115,7 @@ The Cisco HyperFlex API Token Manager module contains three additional functions
       - `"human_readable_time"` - Returns a string value of the HyperFlex API token file creation time in a human-readable format.
       - `"unix_timestamp_time"` - Returns a string value of the HyperFlex API token file creation time in Unix timestamp format.
       - `"source_module"` - Returns a string value of the source module used to create the HyperFlex API token file.
-    - **overwrite** - (Optional) The option to overwrite any pre-existing file at the provided file path value given to the **file_path** argument. Providing this argument is optional. If the value is set to True, any pre-exiting token file will be automatically overwritten. If set to False, the **_manage_token_file()_** function will stop and not proceed with creating a new token file if a pre-existing token file already exists. The default value is True.
+    - **overwrite** - (Optional) The option to overwrite any pre-existing file at the provided file path value given to the **file_path** argument. Providing this argument is optional. If the value is set to `True`, any pre-exiting token file will be automatically overwritten. If set to `False`, the **_manage_token_file()_** function will stop and not proceed with creating a new token file if a pre-existing token file already exists. The default value is `True`.
     
   - **What the Function Returns:**
     
@@ -139,11 +139,11 @@ The Cisco HyperFlex API Token Manager module contains three additional functions
     - **username** - The username credentials that will be used to log into HyperFlex. The value must be a string.
     - **password** - The password credentials that will be used to log into HyperFlex. The value must be a string.
     - **file_path** - The file name and storage location to write a HyperFlex API token file. The value must be a string. An example value is `"c:\\folder\\file.xml"`.
-    - **overwrite** - (Optional) The option to overwrite any pre-existing file at the provided file path value given to the **file_path** argument. Providing this argument is optional. If the value is set to True, any pre-exiting token file will be automatically overwritten. If set to False, the **_create_token_file()_** function will stop and not proceed with creating a new token file if a pre-existing token file already exists. The default value is True.
+    - **overwrite** - (Optional) The option to overwrite any pre-existing file at the provided file path value given to the **file_path** argument. Providing this argument is optional. If the value is set to `True`, any pre-exiting token file will be automatically overwritten. If set to `False`, the **_create_token_file()_** function will stop and not proceed with creating a new token file if a pre-existing token file already exists. The default value is `True`.
     
   - **What the Function Returns:**
     
-    The file path of the new HyperFlex API token file in XML format is returned if creation was successful. The value None is returned if creating a HyperFlex API token file failed.
+    The file path of the new HyperFlex API token file in XML format is returned if creation was successful. The value `None` is returned if creating a HyperFlex API token file failed.
 
 
 - ### Loading Token Files
