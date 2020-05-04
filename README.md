@@ -68,7 +68,7 @@ The Cisco HyperFlex API Token Manager module contains seven functions for managi
       - `"access_token"` - An access token obtained from the HyperFlex API AAA (Authorization, Accounting and Authentication). The access token is used to authorize API operations by properly authenticated users.
       - `"refresh_token"` - A refresh token obtained from the HyperFlex API AAA (Authorization, Accounting and Authentication). The refresh token can be used to obtain a new access token without the need to re-provide HyperFlex username and password credentials.
       - `"token_type"` - A token type obtained from the HyperFlex API AAA (Authorization, Accounting and Authentication). The token type value is `"Bearer"`.
-    - **scope** - The scope of the validate access token operation. The value must be a string. The options are `"READ"` or `"MODIFY"`. The default value is `"READ"`.
+    - **scope** - (Optional) The scope of the validate access token operation. Providing this argument is optional. The value must be a string. The options are `"READ"` or `"MODIFY"`. The default value is `"READ"`.
 
   - **What the Function Returns:**
   
@@ -103,11 +103,11 @@ The Cisco HyperFlex API Token Manager module contains three additional functions
   ```
   The function _manage_token_file()_ creates or loads an XML file containing a HyperFlex API token and then validates the loaded token data. If the loaded HyperFlex API access token is not valid, a new access token will be automatically obtained. If there is a no HyperFlex API token file present in the provided file path, a new token file will be automatically created.
   - **The Available Function Arguments:**
-    - **ip** - The targeted HyperFlex Connect or Cluster Management IP address. Setting the ip, username, and password arguments will enable the _manage_token_file()_ function to automatically generate a new HyperFlex API token and accompanying token file if the current token is expired or if the user provided file path is missing the token file. The default value is None. The user provided value must be a string.
-    - **username** - The username credentials that will be used to log into HyperFlex. Setting the ip, username, and password arguments will enable the manage_token_file() function to automatically generate a new HyperFlex API token and accompanying token file if the current token is expired or if the user provided file path is missing the token file. The default value is None. The user provided value must be a string.
-    - **password** - The password credentials that will be used to log into HyperFlex. Setting the ip, username, and password arguments will enable the _manage_token_file()_ function to automatically generate a new HyperFlex API token and accompanying token file if the current token is expired or if the user provided file path is missing the token file. The default value is None. The user provided value must be a string.
+    - **ip** - The targeted HyperFlex Connect or Cluster Management IP address. The value must be a string.
+    - **username** - The username credentials that will be used to log into HyperFlex. The value must be a string.
+    - **password** - The password credentials that will be used to log into HyperFlex. The value must be a string.
     - **file_path** - The file name and storage location to write a HyperFlex API token file. The value must be a string. An example value is `"c:\\folder\\file.xml"`.
-    - **data** - The data from a HyperFlex API token file that is returned by the manage_token_file() function. The default value of "token" is set, which returns the access token, refresh token, and token type as a dictionary. The user provided value must be a string. See the following list for the options available for the data argument and the returned data:
+    - **data** - (Optional) The data from a HyperFlex API token file that is returned by the _manage_token_file()_ function. Providing this argument is optional. The default value of `"token"` is set, which returns the access token, refresh token, and token type as a dictionary. The user provided value must be a string. See the following list for the options available for the data argument and the returned data:
       - `"token"` - Returns a dictionary with the access token, refresh token, and token type.
       - `"access_token"` - Returns a string value of only the access token.
       - `"refresh_token"` - Returns a string value of only the refresh token.
@@ -115,11 +115,11 @@ The Cisco HyperFlex API Token Manager module contains three additional functions
       - `"human_readable_time"` - Returns a string value of the HyperFlex API token file creation time in a human-readable format.
       - `"unix_timestamp_time"` - Returns a string value of the HyperFlex API token file creation time in Unix timestamp format.
       - `"source_module"` - Returns a string value of the source module used to create the HyperFlex API token file.
-    - **overwrite** - The option to overwrite any pre-existing file at the provided file path value given to the 'file_path' argument. If the value is set to True, any pre-exiting token file will be automatically overwritten. If set to False, the manage_token_file function will stop and not proceed with creating a new token file if a pre-existing token file already exists. The default value is True.
+    - **overwrite** - (Optional) The option to overwrite any pre-existing file at the provided file path value given to the **file_path** argument. Providing this argument is optional. If the value is set to True, any pre-exiting token file will be automatically overwritten. If set to False, the _manage_token_file()_ function will stop and not proceed with creating a new token file if a pre-existing token file already exists. The default value is True.
     
   - **What the Function Returns:**
     
-    The return is based on the value of the data argument. If the default value of "token" is set, the access token, refresh token, and token type will be returned as a dictionary. See the following list to see the options available for the data argument and the returned value:
+    The return is based on the value of the data argument. If the default value of `"token"` is set, the access token, refresh token, and token type will be returned as a dictionary. See the following list to see the options available for the data argument and the returned value:
       - `"token"` - Returns a dictionary with the access token, refresh token, and token type.
       - `"access_token"` - Returns a string value of only the access token.
       - `"refresh_token"` - Returns a string value of only the refresh token.
@@ -139,7 +139,7 @@ The Cisco HyperFlex API Token Manager module contains three additional functions
     - **username** - The username credentials that will be used to log into HyperFlex. The value must be a string.
     - **password** - The password credentials that will be used to log into HyperFlex. The value must be a string.
     - **file_path** - The file name and storage location to write a HyperFlex API token file. The value must be a string. An example value is `"c:\\folder\\file.xml"`.
-    - **overwrite** - The option to overwrite any pre-existing file at the provided file path value given to the 'file_path' argument. If the value is set to True, any pre-exiting token file will be automatically overwritten. If set to False, the create_token_file function will stop and not proceed with creating a new token file if a pre-existing token file already exists. The default value is True.
+    - **overwrite** - (Optional) The option to overwrite any pre-existing file at the provided file path value given to the **file_path** argument. Providing this argument is optional. If the value is set to True, any pre-exiting token file will be automatically overwritten. If set to False, the _create_token_file()_ function will stop and not proceed with creating a new token file if a pre-existing token file already exists. The default value is True.
     
   - **What the Function Returns:**
     
@@ -153,7 +153,7 @@ The Cisco HyperFlex API Token Manager module contains three additional functions
   The function _load_token_file()_ loads data from an XML file containing a HyperFlex API token.
   - **The Available Function Arguments:**
     - **file_path** - The file name and storage location from which to load a HyperFlex API token file. The value must be a string. An example value is `"c:\\folder\\file.xml"`.
-    - **data** - The data from a HyperFlex API token file that is returned by the _load_token_file()_ function. The default value of `"token"` is set, which returns the access token, refresh token, and token type as a dictionary. The user provided value must be a string. See the following list for the options available for the data argument and the returned data:
+    - **data** - (Optional) The data from a HyperFlex API token file that is returned by the _load_token_file()_ function. Providing this argument is optional. The default value of `"token"` is set, which returns the access token, refresh token, and token type as a dictionary. The user provided value must be a string. See the following list for the options available for the data argument and the returned data:
       - `"token"` - Returns a dictionary with the access token, refresh token, and token type.
       - `"access_token"` - Returns a string value of only the access token.
       - `"refresh_token"` - Returns a string value of only the refresh token.
