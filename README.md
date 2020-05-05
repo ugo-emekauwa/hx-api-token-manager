@@ -1,6 +1,6 @@
 # Cisco HyperFlex API Token Manager
 
-Cisco HyperFlex API Token Manager provides the ability to automate the creation, validation and renewal of HyperFlex API tokens. Basic administration of HyperFlex API tokens is also available with easy to use functions that simplify obtaining, refreshing, revoking, and validating tokens.
+Cisco HyperFlex API Token Manager provides the ability to automate the creation, validation and renewal of HyperFlex API tokens. Basic administration of HyperFlex API tokens is also available with easy to use Python functions that simplify obtaining, refreshing, revoking, and validating tokens.
 
 The Cisco HyperFlex API Token Manager can be used as a solution to work with the HyperFlex AAA (Authentication, Authorization and Accounting) API rate limit introduced in HyperFlex 4.0(2a).
 
