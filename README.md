@@ -156,6 +156,8 @@ The Cisco HyperFlex API Token Manager module contains three additional functions
       - `"human_readable_time"` - Returns a string value of the HyperFlex API token file creation time in a human-readable format.
       - `"unix_timestamp_time"` - Returns a string value of the HyperFlex API token file creation time in Unix timestamp format.
       - `"source_module"` - Returns a string value of the source module used to create the HyperFlex API token file.
+    
+      **`NOTE:`** For automatic validation and renewals of HyperFlex API tokens to occur, the data argument must be set to `"token"` (default), `"access_token"`, or `"refresh_token"`.
     - **overwrite** - (Optional) The option to overwrite any pre-existing file at the provided file path value given to the **file_path** argument. Providing this argument is optional. If the value is set to `True`, any pre-exiting token file will be automatically overwritten. If set to `False`, the **_manage_token_file()_** function will stop and not proceed with creating a new token file if a pre-existing token file already exists. The default value is `True`.
     
   - **What the Function Returns:**
