@@ -41,7 +41,7 @@ The Cisco HyperFlex API Token Manager module contains seven functions for managi
     
   - **Example Usage:**
   
-    **(1).** First let's assign the argument values to variables for the **_obtain_token()_** function. Using variables is not required, but it makes for easier readability and the variables can be re-used again with other functions if needed.
+    **(1).** First let's create variables to hold the values for the **_obtain_token()_** function arguments. Using variables is not required, but it provides easier readability and the variables can be re-used again with other functions if needed.
       ![Figure 1 - Argument Variables for obtain_token() Function](./assets/Figure_1-Argument_Variables_for_obtain_token_Function.png "Figure 1 - Argument Variables for obtain_token() Function")
     
     **(2).** Now let's run the **_obtain_token()_** function with the variables as the arguments. Here we can see that a dictonary containing a new HyperFlex API token has been returned as highlighted.
@@ -52,6 +52,7 @@ The Cisco HyperFlex API Token Manager module contains seven functions for managi
       
     **(4).** Here we can see that the **token1** variable now holds the HyperFlex API token dictionary.
       ![Figure 4 - Assign obtain_token() Function to Variable - Value Returned](./assets/Figure_4-Assign_obtain_token_Function_to_Variable-Value_Returned.png "Figure 4 - Assign obtain_token() Function to Variable - Value Returned")
+
 
 - ### Refresh Access Tokens
   ```py
@@ -68,6 +69,17 @@ The Cisco HyperFlex API Token Manager module contains seven functions for managi
   - **What the Function Returns:**
   
     A HyperFlex API access token, refresh token and token type that have been granted as key-value pairs in a dictionary.
+
+  - **Example Usage:**
+  
+    **(1).** First let's create variables to hold the values for the **_refresh_token()_** function arguments. Using variables is not required, but it provides easier readability and the variables can be re-used again with other functions if needed.
+      ![Figure 5 - Argument Variables for refresh_token() Function](./assets/Figure_5-Argument_Variables_for_refresh_token_Function.png "Figure 5 - Argument Variables for refresh_token() Function")
+    
+    **(2).** Now let's run the **_refresh_token()_** function with the variables as the arguments. Here we can see that a dictonary containing a new HyperFlex API token has been returned as highlighted.
+      ![Figure 6 - Results from refresh_token() Function - Return Highlighted](./assets/Figure_6-Results_from_refresh_token_Function-Return_Highlighted.png "Figure 6 - Results from refresh_token() Function - Return Highlighted")
+      
+    **(3).** Here is a comparison of the older HyperFlex API token held by the **token1** variable and the new replacement HyperFlex API token returned by the **_refresh_token()_** function.
+      ![Figure 7 - Results from refresh_token() Function Comparison - Values Highlighted](./assets/Figure_7-Results_from_refresh_token_Function_Comparison-Values_Highlighted.png "Figure 7 - Results from refresh_token() Function Comparison - Values Highlighted")
 
 
 - ### Validate Access Tokens
