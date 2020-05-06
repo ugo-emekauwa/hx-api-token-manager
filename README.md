@@ -99,6 +99,14 @@ The Cisco HyperFlex API Token Manager module contains seven functions for managi
   
     The Boolean value `True` is returned for a successful validation. The Boolean value `False` is returned if the validation fails.
 
+  - **Example Usage:**
+  
+    **(1).** First let's create variables to hold the values for the **_validate_token()_** function arguments. Using variables is not required, but provides for easier readability and the variables can be re-used again at a later time if needed.
+      ![Figure 8 - Argument Variables for validate_token() Function](./assets/Figure_8-Argument_Variables_for_validate_token_Function.png "Figure 8 - Argument Variables for validate_token() Function")
+    
+    **(2).** Now let's run the **_validate_token()_** function with the variables as the arguments. Here we can see that a successful validation has occurred and the Boolean value `True` been returned as highlighted.
+      ![Figure 9 - Results from validate_token() Function - Return Highlighted](./assets/Figure_9-Results_from_validate_token_Function-Return_Highlighted.png "Figure 9 - Results from validate_token() Function - Return Highlighted")
+      
 
 - ### Revoke Tokens
   ```py
@@ -115,6 +123,14 @@ The Cisco HyperFlex API Token Manager module contains seven functions for managi
   - **What the Function Returns:**
     
     The Boolean value `True` is returned for a successful revocation. The Boolean value `False` is returned if the revocation fails.
+
+  - **Example Usage:**
+  
+    **(1).** First let's create variables to hold the values for the **_revoke_token()_** function arguments. Using variables is not required, but provides for easier readability and the variables can be re-used again at a later time if needed.
+      ![Figure 10 - Argument Variables for revoke_token() Function](./assets/Figure_10-Argument_Variables_for_revoke_token_Function.png "Figure 10 - Argument Variables for revoke_token() Function")
+    
+    **(2).** Now let's run the **_revoke_token()_** function with the variables as the arguments. Here we can see that a successful revocation has occurred and the Boolean value `True` been returned as highlighted.
+      ![Figure 11 - Results from revoke_token() Function - Return Highlighted](./assets/Figure_11-Results_from_revoke_token_Function-Return_Highlighted.png "Figure 11 - Results from revoke_token() Function - Return Highlighted")
 
 
 
