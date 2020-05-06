@@ -620,6 +620,9 @@ def manage_token_file(ip,username,password,file_path,data="token",overwrite=True
                     API token file creation time in Unix timestamp format.
                 7. "source_module": Returns a string value of the source
                     module used to create the HyperFlex API token file.
+            NOTE: For automatic validation and renewals of HyperFlex API
+            tokens to occur, the data argument must be set to "token"
+            (default), "access_token", or "refresh_token".
         overwrite: (Optional) The option to overwrite any pre-existing file at the
             provided file path value given to the 'file_path' argument.
             Providing this argument is optional. If the value is set to True,
@@ -724,8 +727,9 @@ def manage_token_file(ip,username,password,file_path,data="token",overwrite=True
                     print("Exiting.")
                     return
         else:
-            print("A pre-exiting HyperFlex API token file has been loaded. It "
+            print("The pre-exiting HyperFlex API token file has been loaded. It "
                   "has not been validated.")
             print("Set the 'data' argument to 'token', 'access_token' or "
-                  "'refresh_token' to enable automatic validation.")
+                  "'refresh_token' to enable automatic validation and "
+                  "renewals of HyperFlex API tokens.")
             return loaded_existing_hx_api_token_file
