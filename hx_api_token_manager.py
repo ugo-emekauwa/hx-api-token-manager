@@ -682,9 +682,11 @@ def manage_token_file(ip,username,password,file_path,data="token",overwrite=True
     if not os.path.isfile(file_path):
         print("A HyperFlex API token file was not found.")
         # Create a new HyperFlex API token file
-        new_hx_api_token_file = create_token_file(ip,username,password,file_path)
+        new_hx_api_token_file = create_token_file(
+            ip,username,password,file_path)
         # Load the new HyperFlex API token file
-        loaded_new_hx_api_token_file = load_token_file(new_hx_api_token_file,data)
+        loaded_new_hx_api_token_file = load_token_file(
+            new_hx_api_token_file,data)
         print("A valid HyperFlex API token is ready.")
         return loaded_new_hx_api_token_file
     else:
@@ -695,8 +697,9 @@ def manage_token_file(ip,username,password,file_path,data="token",overwrite=True
                     "refresh_token"
                     ):
             # Validate the pre-existing HyperFlex API token file
+            print("Moving to validation of the requested {} data...".format(data))
             validate_loaded_existing_hx_api_token_file = validate_token(
-                ip,loaded_existing_hx_api_token_file)
+                ip,load_token_file(file_path))
             if validate_loaded_existing_hx_api_token_file:
                 print("A valid HyperFlex API token is ready.")
                 return loaded_existing_hx_api_token_file
