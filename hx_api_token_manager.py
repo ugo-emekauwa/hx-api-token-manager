@@ -7,7 +7,7 @@ Summary: Cisco HyperFlex API Token Manager provides the ability to
          Basic administration of HyperFlex API tokens is also available with
          easy to use Python functions that simplify obtaining, refreshing,
          revoking and validating tokens.
-Notes: Tested on HyperFlex 4.0(1b) and 4.0(2a).
+Notes: Tested on HyperFlex 4.0(1b), 4.0(2a), and 4.0(2b).
 """
 
 # Import needed modules
@@ -340,11 +340,13 @@ def create_token_file(ip,username,password,file_path,overwrite=True):
             "c:\\folder\\file.xml".
         overwrite: (Optional) The option to overwrite any pre-existing file at
             the provided file path value given to the 'file_path' argument.
-            Providing this argument is optional. If the value is set to True,
-            any pre-exiting token file will be automatically overwritten. If
-            set to False, the create_token_file() function will stop and not
+            Providing this argument is optional. If the argument is set to the
+            Boolean value True, any pre-exiting token file will be
+            automatically overwritten. If the argument is set to the Boolean
+            value False, the create_token_file() function will stop and not
             proceed with creating a new token file if a pre-existing token
-            file already exists. The default value is True.
+            file is already in place at the given file path location. The
+            default value is True.
 
     Returns:
         The file path of the new HyperFlex API token file in XML format is
@@ -621,15 +623,22 @@ def manage_token_file(ip,username,password,file_path,data="token",overwrite=True
                 7. "source_module": Returns a string value of the source
                     module used to create the HyperFlex API token file.
             NOTE: For automatic validation and renewals of HyperFlex API
-            tokens to occur, the data argument must be set to "token"
+            tokens to occur, the 'data' argument must be set to "token"
             (default), "access_token", or "refresh_token".
-        overwrite: (Optional) The option to overwrite any pre-existing file at the
-            provided file path value given to the 'file_path' argument.
-            Providing this argument is optional. If the value is set to True,
-            any pre-exiting token file will be automatically overwritten. If
-            set to False, the manage_token_file() function will stop and not
+        overwrite: (Optional) The option to overwrite any pre-existing file at
+            the provided file path value given to the 'file_path' argument.
+            Providing this argument is optional. If the argument is set to the
+            Boolean value True, any pre-exiting token file will be
+            automatically overwritten. If the argument is set to the Boolean
+            value False, the manage_token_file() function will stop and not
             proceed with creating a new token file if a pre-existing token
-            file already exists. The default value is True.
+            file is already in place at the given file path location. The
+            default value is True.
+            NOTE: For automatic validation and renewals of HyperFlex API
+            tokens to occur, the 'overwrite' argument must be set to the
+            Boolean value True (default). Setting the 'overwrite' argument to
+            the Boolean value False will disable the ability to update
+            pre-existing HyperFlex API token files.
         
     Returns:
         The return is based on the value of the 'data' argument. If the default
