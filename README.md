@@ -179,6 +179,9 @@ The Cisco HyperFlex API Token Manager module contains three additional functions
   create_token_file(ip,username,password,file_path,overwrite=True)
   ```
   The function **_create_token_file()_** creates an XML file containing a newly issued HyperFlex API token.
+  
+  **`NOTE:`** For automated creation, validation and renewal of HyperFlex API token files, the [**_manage_token_file()_**](https://github.com/ugo-emekauwa/hx-api-token-manager#automated-management-of-token-files) function should be used. The **_create_token_file()_** function will only create new HyperFlex API token files.
+  
   - **The Available Function Arguments:**
     - **ip** - The targeted HyperFlex Connect or Cluster Management IP address. The value must be a string.
     - **username** - The username credentials that will be used to log into HyperFlex. The value must be a string.
@@ -196,6 +199,9 @@ The Cisco HyperFlex API Token Manager module contains three additional functions
   load_token_file(file_path,data="token")
   ```
   The function **_load_token_file()_** loads data from an XML file containing a HyperFlex API token.
+  
+  **`NOTE:`** For automated creation, validation and renewal of HyperFlex API token files, the [**_manage_token_file()_**](https://github.com/ugo-emekauwa/hx-api-token-manager#automated-management-of-token-files) function should be used. The **_load_token_file()_** function will only load data from pre-exisiting HyperFlex API token files.
+  
   - **The Available Function Arguments:**
     - **file_path** - The file name and storage location from which to load a HyperFlex API token file. The value must be a string. An example value is `"c:\\folder\\file.xml"`.
     - **data** - (Optional) The data from a HyperFlex API token file that is returned by the **_load_token_file()_** function. Providing this argument is optional. The default value of `"token"` is set, which returns the access token, refresh token, and token type as a dictionary. The user provided value must be a string. See the following list for the options available for the **data** argument and the returned value:
