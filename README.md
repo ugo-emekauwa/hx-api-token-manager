@@ -280,6 +280,8 @@ The Cisco HyperFlex API Token Manager module contains three additional functions
     
     **(2).** Now let's run the **_load_token_file()_** function with the variables as the arguments. Here we can see that a dictonary containing a new HyperFlex API token has been returned as highlighted.
       ![Figure 28 - Results from load_token_file() Function - Return Highlighted](./assets/Figure_28-Results_from_load_token_file_Function-Return_Highlighted.png "Figure 28 - Results from load_token_file() Function - Return Highlighted")
+      
+    **`NOTE:`** For examples of the output from the various optional values of the **data** argument, see the **Example Usage** section for the [**_manage_token_file()_**](https://github.com/ugo-emekauwa/hx-api-token-manager#automated-management-of-token-files) function. The type of outputs are the same for the **_load_token_file()_** function.
 
 
 ## Related Tools:
