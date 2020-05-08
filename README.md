@@ -249,7 +249,7 @@ The Cisco HyperFlex API Token Manager module contains three additional functions
   ```
   The function **_load_token_file()_** loads data from an XML file containing a HyperFlex API token.
   
-  **`NOTE:`** For automated creation, validation and renewal of HyperFlex API token files, the [**_manage_token_file()_**](https://github.com/ugo-emekauwa/hx-api-token-manager#automated-management-of-token-files) function should be used. The **_load_token_file()_** function will only load data from pre-exisiting HyperFlex API token files.
+  **`NOTE:`** For automated creation, validation and renewal of HyperFlex API token files, the [**_manage_token_file()_**](https://github.com/ugo-emekauwa/hx-api-token-manager#automated-management-of-token-files) function should be used. The **_load_token_file()_** function will only load data from pre-existing HyperFlex API token files.
   
   - **The Available Function Arguments:**
     - **file_path** - The file name and storage location from which to load a HyperFlex API token file. The value must be a string. An example value is `"c:\\folder\\file.xml"`.
