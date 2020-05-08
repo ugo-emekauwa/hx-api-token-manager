@@ -44,7 +44,7 @@ The Cisco HyperFlex API Token Manager module contains seven functions for managi
     **(1).** First let's create variables to hold the values for the **_obtain_token()_** function arguments. Using variables is not required, but provides for easier readability and the variables can be re-used again at a later time if needed.
       ![Figure 1 - Argument Variables for obtain_token() Function](./assets/Figure_1-Argument_Variables_for_obtain_token_Function.png "Figure 1 - Argument Variables for obtain_token() Function")
     
-    **(2).** Now let's run the **_obtain_token()_** function with the variables as the arguments. Here we can see that a dictonary containing a new HyperFlex API token has been returned as highlighted.
+    **(2).** Now let's run the **_obtain_token()_** function with the variables as the arguments. Here we can see that a dictionary containing a new HyperFlex API token has been returned as highlighted.
       ![Figure 2 - Results from obtain_token() Function - Return Highlighted](./assets/Figure_2-Results_from_obtain_token_Function-Return_Highlighted.png "Figure 2 - Results from obtain_token() Function - Return Highlighted")
       
     **(3).** Another option is to assign the **_obtain_token()_** function to a variable. The returned HyperFlex API token dictionary will be directly held by the variable for easy reusability later with other functions.
@@ -75,7 +75,7 @@ The Cisco HyperFlex API Token Manager module contains seven functions for managi
     **(1).** First let's create variables to hold the values for the **_refresh_token()_** function arguments. Using variables is not required, but provides for easier readability and the variables can be re-used again at a later time if needed.
       ![Figure 5 - Argument Variables for refresh_token() Function](./assets/Figure_5-Argument_Variables_for_refresh_token_Function.png "Figure 5 - Argument Variables for refresh_token() Function")
     
-    **(2).** Now let's run the **_refresh_token()_** function with the variables as the arguments. Here we can see that a dictonary containing a new HyperFlex API token has been returned as highlighted.
+    **(2).** Now let's run the **_refresh_token()_** function with the variables as the arguments. Here we can see that a dictionary containing a new HyperFlex API token has been returned as highlighted.
       ![Figure 6 - Results from refresh_token() Function - Return Highlighted](./assets/Figure_6-Results_from_refresh_token_Function-Return_Highlighted.png "Figure 6 - Results from refresh_token() Function - Return Highlighted")
       
     **(3).** Here is a comparison of the older HyperFlex API token held by the **token1** variable and the new replacement HyperFlex API token returned by the **_refresh_token()_** function.
@@ -178,7 +178,7 @@ The Cisco HyperFlex API Token Manager module contains three additional functions
     **(1).** First let's create variables to hold the values for the **_manage_token_file()_** function arguments. Using variables is not required, but provides for easier readability and the variables can be re-used again at a later time if needed.
       ![Figure 12 - Argument Variables for manage_token_file() Function](./assets/Figure_12-Argument_Variables_for_manage_token_file_Function.png "Figure 12 - Argument Variables for manage_token_file() Function")
     
-    **(2).** Now let's run the **_manage_token_file()_** function with the variables as the arguments. Here we can see that a dictonary containing a new HyperFlex API token has been returned as highlighted.
+    **(2).** Now let's run the **_manage_token_file()_** function with the variables as the arguments. Here we can see that a dictionary containing a new HyperFlex API token has been returned as highlighted.
       ![Figure 13 - Results from manage_token_file() Function - Return Highlighted](./assets/Figure_13-Results_from_manage_token_file_Function-Return_Highlighted.png "Figure 13 - Results from manage_token_file() Function - Return Highlighted")
       
     **(3).** Here we can see a sample HyperFlex API token file and the available data in XML format created by the **_manage_token_file()_** function. The XML file is held at the storage location given in the **file_path** argument. 
@@ -233,7 +233,7 @@ The Cisco HyperFlex API Token Manager module contains three additional functions
     **(1).** First let's create variables to hold the values for the **_create_token_file()_** function arguments. Using variables is not required, but provides for easier readability and the variables can be re-used again at a later time if needed.
       ![Figure 23 - Argument Variables for create_token_file() Function](./assets/Figure_23-Argument_Variables_for_create_token_file_Function.png "Figure 23 - Argument Variables for create_token_file() Function")
     
-    **(2).** Now let's run the **_create_token_file()_** function with the variables as the arguments. Here we can see that a dictonary containing a new HyperFlex API token has been returned as highlighted.
+    **(2).** Now let's run the **_create_token_file()_** function with the variables as the arguments. Here we can see that a dictionary containing a new HyperFlex API token has been returned as highlighted.
       ![Figure 24 - Results from create_token_file() Function - Return Highlighted](./assets/Figure_24-Results_from_create_token_file_Function-Return_Highlighted.png "Figure 24 - Results from create_token_file() Function - Return Highlighted")
       
     **(3).** Here we can see a sample HyperFlex API token file and the available data in XML format created by the **_create_token_file()_** function. The XML file is held at the storage location given in the **file_path** argument. 
@@ -278,7 +278,7 @@ The Cisco HyperFlex API Token Manager module contains three additional functions
     **(1).** First let's create variables to hold the values for the **_load_token_file()_** function arguments. Using variables is not required, but provides for easier readability and the variables can be re-used again at a later time if needed.
       ![Figure 27 - Argument Variables for load_token_file() Function](./assets/Figure_27-Argument_Variables_for_load_token_file_Function.png "Figure 27 - Argument Variables for load_token_file() Function")
     
-    **(2).** Now let's run the **_load_token_file()_** function with the variables as the arguments. Here we can see that a dictonary containing a new HyperFlex API token has been returned as highlighted.
+    **(2).** Now let's run the **_load_token_file()_** function with the variables as the arguments. Here we can see that a dictionary containing a new HyperFlex API token has been returned as highlighted.
       ![Figure 28 - Results from load_token_file() Function - Return Highlighted](./assets/Figure_28-Results_from_load_token_file_Function-Return_Highlighted.png "Figure 28 - Results from load_token_file() Function - Return Highlighted")
       
     **`NOTE:`** For examples of the output from the various optional values of the **data** argument, see the **Example Usage** section for the [**_manage_token_file()_**](https://github.com/ugo-emekauwa/hx-api-token-manager#automated-management-of-token-files) function. The type of outputs are the same for the **_load_token_file()_** function.
