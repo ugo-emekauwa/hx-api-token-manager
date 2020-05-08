@@ -227,6 +227,20 @@ The Cisco HyperFlex API Token Manager module contains three additional functions
   - **What the Function Returns:**
     
     The file path of the new HyperFlex API token file in XML format is returned if creation was successful. The value `None` is returned if creating a HyperFlex API token file failed.
+    
+  - **Example Usage:**
+  
+    **(1).** First let's create variables to hold the values for the **_create_token_file()_** function arguments. Using variables is not required, but provides for easier readability and the variables can be re-used again at a later time if needed.
+      ![Figure 23 - Argument Variables for create_token_file() Function](./assets/Figure_23-Argument_Variables_for_create_token_file_Function.png "Figure 23 - Argument Variables for create_token_file() Function")
+    
+    **(2).** Now let's run the **_create_token_file()_** function with the variables as the arguments. Here we can see that a dictonary containing a new HyperFlex API token has been returned as highlighted.
+      ![Figure 24 - Results from create_token_file() Function - Return Highlighted](./assets/Figure_24-Results_from_create_token_file_Function-Return_Highlighted.png "Figure 24 - Results from create_token_file() Function - Return Highlighted")
+      
+    **(3).** Here we can see a sample HyperFlex API token file and the available data in XML format created by the **_create_token_file()_** function. The XML file is held at the storage location given in the **file_path** argument. 
+      ![Figure 25 - Sample XML File Created by create_token_file() Function](./assets/Figure_25-Sample_XML_File_Created_by_create_token_file_Function.png "Figure 25 - Sample XML File Created by create_token_file() Function")
+      
+    **(4).** Now let's run the **_manage_token_file()_** function with the **overwrite** argument set to `False`. Here we can see that the pre-existing HyperFlex API token file was not overwritten.
+      ![Figure 26 - Results from create_token_file() Function - overwrite Argument Set to False](./assets/Figure_26-Results_from_create_token_file_Function-overwrite_Argument_Set_to_False.png "Figure 26 - Results from create_token_file() Function - overwrite Argument Set to False")
 
 
 - ### Loading Token Files
