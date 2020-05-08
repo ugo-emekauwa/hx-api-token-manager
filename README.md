@@ -272,6 +272,14 @@ The Cisco HyperFlex API Token Manager module contains three additional functions
       - `"human_readable_time"` - Returns a string value of the HyperFlex API token file creation time in a human-readable format.
       - `"unix_timestamp_time"` - Returns a string value of the HyperFlex API token file creation time in Unix timestamp format.
       - `"source_module"` - Returns a string value of the source module used to create the HyperFlex API token file.
+      
+  - **Example Usage:**
+  
+    **(1).** First let's create variables to hold the values for the **_load_token_file()_** function arguments. Using variables is not required, but provides for easier readability and the variables can be re-used again at a later time if needed.
+      ![Figure 27 - Argument Variables for load_token_file() Function](./assets/Figure_27-Argument_Variables_for_load_token_file_Function.png "Figure 27 - Argument Variables for load_token_file() Function")
+    
+    **(2).** Now let's run the **_load_token_file()_** function with the variables as the arguments. Here we can see that a dictonary containing a new HyperFlex API token has been returned as highlighted.
+      ![Figure 28 - Results from load_token_file() Function - Return Highlighted](./assets/Figure_28-Results_from_load_token_file_Function-Return_Highlighted.png "Figure 28 - Results from load_token_file() Function - Return Highlighted")
 
 
 ## Related Tools:
