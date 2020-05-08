@@ -233,7 +233,7 @@ The Cisco HyperFlex API Token Manager module contains three additional functions
     **(1).** First let's create variables to hold the values for the **_create_token_file()_** function arguments. Using variables is not required, but provides for easier readability and the variables can be re-used again at a later time if needed.
       ![Figure 23 - Argument Variables for create_token_file() Function](./assets/Figure_23-Argument_Variables_for_create_token_file_Function.png "Figure 23 - Argument Variables for create_token_file() Function")
     
-    **(2).** Now let's run the **_create_token_file()_** function with the variables as the arguments. Here we can see that a dictionary containing a new HyperFlex API token has been returned as highlighted.
+    **(2).** Now let's run the **_create_token_file()_** function with the variables as the arguments. Here we can see that a new HyperFlex API token file has been created. The storage location of the new HyperFlex API token file has been returned as highlighted.
       ![Figure 24 - Results from create_token_file() Function - Return Highlighted](./assets/Figure_24-Results_from_create_token_file_Function-Return_Highlighted.png "Figure 24 - Results from create_token_file() Function - Return Highlighted")
       
     **(3).** Here we can see a sample HyperFlex API token file and the available data in XML format created by the **_create_token_file()_** function. The XML file is held at the storage location given in the **file_path** argument. 
