@@ -47,12 +47,14 @@ The Cisco HyperFlex API Token Manager module contains seven functions for managi
       ![Figure 1 - Argument Variables for obtain_token() Function](./assets/Figure_1-Argument_Variables_for_obtain_token_Function.png "Figure 1 - Argument Variables for obtain_token() Function")
     
     **(2).** Now let's run the **_obtain_token()_** function with the variables as the arguments. Here we can see that a dictionary containing a new HyperFlex API token has been returned as highlighted.
+    
       ![Figure 2 - Results from obtain_token() Function - Return Highlighted](./assets/Figure_2-Results_from_obtain_token_Function-Return_Highlighted.png "Figure 2 - Results from obtain_token() Function - Return Highlighted")
       
     **(3).** Another option is to assign the **_obtain_token()_** function to a variable. The returned HyperFlex API token dictionary will be directly held by the variable for easy reusability later with other functions.
       ![Figure 3 - Assign obtain_token() Function to Variable](./assets/Figure_3-Assign_obtain_token_Function_to_Variable.png "Figure 3 - Assign obtain_token() Function to Variable")
       
     **(4).** Here we can see that the **token1** variable now holds the returned HyperFlex API token dictionary.
+    
       ![Figure 4 - Assign obtain_token() Function to Variable - Value Returned](./assets/Figure_4-Assign_obtain_token_Function_to_Variable-Value_Returned.png "Figure 4 - Assign obtain_token() Function to Variable - Value Returned")
 
 
@@ -78,6 +80,7 @@ The Cisco HyperFlex API Token Manager module contains seven functions for managi
       ![Figure 5 - Argument Variables for refresh_token() Function](./assets/Figure_5-Argument_Variables_for_refresh_token_Function.png "Figure 5 - Argument Variables for refresh_token() Function")
     
     **(2).** Now let's run the **_refresh_token()_** function with the variables as the arguments. Here we can see that a dictionary containing a new HyperFlex API token has been returned as highlighted.
+    
       ![Figure 6 - Results from refresh_token() Function - Return Highlighted](./assets/Figure_6-Results_from_refresh_token_Function-Return_Highlighted.png "Figure 6 - Results from refresh_token() Function - Return Highlighted")
       
     **(3).** Here is a comparison of the older HyperFlex API token held by the **token1** variable and the new replacement HyperFlex API token returned by the **_refresh_token()_** function.
