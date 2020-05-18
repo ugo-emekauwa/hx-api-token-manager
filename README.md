@@ -171,7 +171,7 @@ The Cisco HyperFlex API Token Manager module contains three additional functions
       - `"source_module"` - Returns a string value of the source module used to create the HyperFlex API token file.
     
       **`NOTE:`** For automatic validation and renewals of HyperFlex API tokens to occur, the data argument must be set to `"token"` (default), `"access_token"`, or `"refresh_token"`.
-    - **overwrite** - (Optional) The option to overwrite any pre-existing file at the provided file path value given to the **file_path** argument. Providing this argument is optional. If the argument is set to the Boolean value `True`, any pre-exiting token file will be automatically overwritten. If the argument is set to the Boolean value `False`, the **_manage_token_file()_** function will stop and not proceed with creating a new token file if a pre-existing token file is already in place at the given file path location. The default value is `True`.
+    - **overwrite** - (Optional) The option to overwrite any pre-existing file at the provided file path value given to the **file_path** argument. Providing this argument is optional. If the argument is set to the Boolean value `True`, any pre-existing token file will be automatically overwritten. If the argument is set to the Boolean value `False`, the **_manage_token_file()_** function will stop and not proceed with creating a new token file if a pre-existing token file is already in place at the given file path location. The default value is `True`.
     
       **`NOTE:`** For automatic validation and renewals of HyperFlex API tokens to occur, the **overwrite** argument must be set to the Boolean value `True` (default). Setting the **overwrite** argument to the Boolean value `False` will disable the ability to update pre-existing HyperFlex API token files.
     
@@ -246,7 +246,7 @@ The Cisco HyperFlex API Token Manager module contains three additional functions
     - **username** - The username credentials that will be used to log into HyperFlex. The value must be a string.
     - **password** - The password credentials that will be used to log into HyperFlex. The value must be a string.
     - **file_path** - The file name and storage location to write a HyperFlex API token file. The value must be a string. An example value is `"c:\\folder\\file.xml"`.
-    - **overwrite** - (Optional) The option to overwrite any pre-existing file at the provided file path value given to the **file_path** argument. Providing this argument is optional. If the argument is set to the Boolean value `True`, any pre-exiting token file will be automatically overwritten. If the argument is set to the Boolean value `False`, the **_create_token_file()_** function will stop and not proceed with creating a new token file if a pre-existing token file is already in place at the given file path location. The default value is `True`.
+    - **overwrite** - (Optional) The option to overwrite any pre-existing file at the provided file path value given to the **file_path** argument. Providing this argument is optional. If the argument is set to the Boolean value `True`, any pre-existing token file will be automatically overwritten. If the argument is set to the Boolean value `False`, the **_create_token_file()_** function will stop and not proceed with creating a new token file if a pre-existing token file is already in place at the given file path location. The default value is `True`.
     
   - **What the Function Returns:**
     
