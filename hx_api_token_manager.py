@@ -341,7 +341,7 @@ def create_token_file(ip,username,password,file_path,overwrite=True):
         overwrite: (Optional) The option to overwrite any pre-existing file at
             the provided file path value given to the 'file_path' argument.
             Providing this argument is optional. If the argument is set to the
-            Boolean value True, any pre-exiting token file will be
+            Boolean value True, any pre-existing token file will be
             automatically overwritten. If the argument is set to the Boolean
             value False, the create_token_file() function will stop and not
             proceed with creating a new token file if a pre-existing token
@@ -628,7 +628,7 @@ def manage_token_file(ip,username,password,file_path,data="token",overwrite=True
         overwrite: (Optional) The option to overwrite any pre-existing file at
             the provided file path value given to the 'file_path' argument.
             Providing this argument is optional. If the argument is set to the
-            Boolean value True, any pre-exiting token file will be
+            Boolean value True, any pre-existing token file will be
             automatically overwritten. If the argument is set to the Boolean
             value False, the manage_token_file() function will stop and not
             proceed with creating a new token file if a pre-existing token
@@ -736,7 +736,7 @@ def manage_token_file(ip,username,password,file_path,data="token",overwrite=True
                     print("Exiting.")
                     return
         else:
-            print("The pre-exiting HyperFlex API token file has been loaded. It "
+            print("The pre-existing HyperFlex API token file has been loaded. It "
                   "has not been validated.")
             print("Set the 'data' argument to 'token', 'access_token' or "
                   "'refresh_token' to enable automatic validation and "
