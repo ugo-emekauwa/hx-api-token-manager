@@ -208,27 +208,27 @@ The Cisco HyperFlex API Token Manager module contains three additional functions
     
       ![Figure 16 - Assign manage_token_file() Function to Variable - Value Returned](./assets/Figure_16-Assign_manage_token_file_Function_to_Variable-Value_Returned.png "Figure 16 - Assign manage_token_file() Function to Variable - Value Returned")
       
-    **(6).** Now let's run the **_manage_token_file()_** function with the **data** argument set to `access_token`. Here we can see that only the HyperFlex API access token has been returned as highlighted.
+    **(6).** Now let's run the **_manage_token_file()_** function with the **data** argument set to `"access_token"`. Here we can see that only the HyperFlex API access token has been returned as highlighted.
     
       ![Figure 17 - Results from manage_token_file() Function - access_token Returned](./assets/Figure_17-Results_from_manage_token_file_Function-access_token_Returned.png "Figure 17 - Results from manage_token_file() Function - access_token Returned")
     
-    **(7).** Now let's run the **_manage_token_file()_** function with the **data** argument set to `refresh_token`. Here we can see that only the HyperFlex API refresh token has been returned as highlighted.
+    **(7).** Now let's run the **_manage_token_file()_** function with the **data** argument set to `"refresh_token"`. Here we can see that only the HyperFlex API refresh token has been returned as highlighted.
     
       ![Figure 18 - Results from manage_token_file() Function - refresh_token Returned](./assets/Figure_18-Results_from_manage_token_file_Function-refresh_token_Returned.png "Figure 18 - Results from manage_token_file() Function - refresh_token Returned")
       
-    **(8).** Now let's run the **_manage_token_file()_** function with the **data** argument set to `token_type`. Here we can see that only the HyperFlex API token type has been returned as highlighted.
+    **(8).** Now let's run the **_manage_token_file()_** function with the **data** argument set to `"token_type"`. Here we can see that only the HyperFlex API token type has been returned as highlighted.
     
       ![Figure 19 - Results from manage_token_file() Function - token_type Returned](./assets/Figure_19-Results_from_manage_token_file_Function-token_type_Returned.png "Figure 19 - Results from manage_token_file() Function - token_type Returned")
       
-    **(9).** Now let's run the **_manage_token_file()_** function with the **data** argument set to `human_readable_time`. Here we can see that only the HyperFlex API token creation time in a human-readable format has been returned as highlighted.
+    **(9).** Now let's run the **_manage_token_file()_** function with the **data** argument set to `"human_readable_time"`. Here we can see that only the HyperFlex API token creation time in a human-readable format has been returned as highlighted.
     
       ![Figure 20 - Results from manage_token_file() Function - human_readable_time Returned](./assets/Figure_20-Results_from_manage_token_file_Function-human_readable_time_Returned.png "Figure 20 - Results from manage_token_file() Function - human_readable_time Returned")
       
-    **(10).** Now let's run the **_manage_token_file()_** function with the **data** argument set to `unix_timestamp_time`. Here we can see that only the HyperFlex API token creation time in the Unix timestamp format has been returned as highlighted.
+    **(10).** Now let's run the **_manage_token_file()_** function with the **data** argument set to `"unix_timestamp_time"`. Here we can see that only the HyperFlex API token creation time in the Unix timestamp format has been returned as highlighted.
     
       ![Figure 21 - Results from manage_token_file() Function - unix_timestamp_time Returned](./assets/Figure_21-Results_from_manage_token_file_Function-unix_timestamp_time_Returned.png "Figure 21 - Results from manage_token_file() Function - unix_timestamp_time Returned")
 
-    **(11).** Now let's run the **_manage_token_file()_** function with the **data** argument set to `source_module`. Here we can see that only the source module from which the **_manage_token_file()_** function was called has been returned as highlighted.
+    **(11).** Now let's run the **_manage_token_file()_** function with the **data** argument set to `"source_module"`. Here we can see that only the source module from which the **_manage_token_file()_** function was called has been returned as highlighted.
     
       ![Figure 22 - Results from manage_token_file() Function - source_module Returned](./assets/Figure_22-Results_from_manage_token_file_Function-source_module_Returned.png "Figure 22 - Results from manage_token_file() Function - source_module Returned")
 
