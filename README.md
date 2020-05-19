@@ -313,6 +313,8 @@ The Cisco HyperFlex API Token Manager module contains three additional functions
       
     **`NOTE:`** For examples of the output from the various optional values of the **data** argument, see the **Example Usage** section for the [**_manage_token_file()_**](https://github.com/ugo-emekauwa/hx-api-token-manager#automated-management-of-token-files) function. The type of outputs are the same for the **_load_token_file()_** function.
 
+## Notes:
+- For setups where logging is desired, a version of the **Cisco HyperFlex API Token Manager** that has been modified to output to a log file is available in the [**logging-version**](https://github.com/ugo-emekauwa/hx-api-token-manager/tree/master/logging-version) folder of this repository as **hx_api_token_manager_logging.py**. Before use, manually edit the **hx_api_token_manager_logging.py** file to add a log file location or import **hx_api_token_manager_logging** into another module where the log file location has already been set.
 
 ## Related Tools:
 Here are similar tools to help manage Cisco HyperFlex training, demonstration and development environments.
