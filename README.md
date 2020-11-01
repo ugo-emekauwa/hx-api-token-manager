@@ -316,11 +316,19 @@ The Cisco HyperFlex API Token Manager module contains three additional functions
 ## Notes:
 - For setups where logging is desired, a version of the **Cisco HyperFlex API Token Manager** that has been modified to output to a log file is available in the [**logging-version**](https://github.com/ugo-emekauwa/hx-api-token-manager/tree/master/logging-version) folder of this repository as **hx_api_token_manager_logging.py**. Before use, manually edit the **hx_api_token_manager_logging.py** file to add a log file location or import **hx_api_token_manager_logging** into another module where the log file location has already been set.
 
+## Use Cases:
+The Cisco HyperFlex API Token Manager is part of the automation solution used to support and maintain the following Cisco Data Center product demonstrations on Cisco dCloud:
+
+1. [_Cisco HyperFlex with Hyper-V v1_](https://dcloud2-rtp.cisco.com/content/instantdemo/cisco-hyperflex-with-hyper-v)
+
+Cisco dCloud is available at [https://dcloud.cisco.com](https://dcloud.cisco.com), where product demonstrations and labs can be found in the Catalog.
+
 ## Related Tools:
 Here are similar tools to help manage Cisco HyperFlex training, demonstration and development environments.
 - [Cisco HyperFlex Datastore Safeguard](https://github.com/ugo-emekauwa/hx-datastore-safeguard)
 - [Cisco HyperFlex Datastore Cleanup](https://github.com/ugo-emekauwa/hx-datastore-cleanup)
 - [HyperFlex Notification Tool for Cisco Intersight](https://github.com/ugo-emekauwa/hyperflex-notification-tool)
+- [HyperFlex Edge Automated Deployment Tool for Cisco Intersight](https://github.com/ugo-emekauwa/hx-auto-deploy)
 
 ## Author:
 Ugo Emekauwa
