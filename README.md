@@ -8,7 +8,7 @@ The Cisco HyperFlex API Token Manager can be used as a solution to work with the
 
 ## Prerequisites:
 1. Python 3 installed, which can be downloaded from [https://www.python.org/downloads/](https://www.python.org/downloads/).
-2. Clone or download the Cisco HyperFlex API Token Manager repository by using the ![GitHub Clone or download](./assets/GitHub_Clone_or_download_link_button.png "GitHub Clone or download") link on the main repository web page or by running the following command:
+2. Clone or download the Cisco HyperFlex API Token Manager repository by using the ![GitHub Code Button](./assets/GitHub_Code_Button.png "GitHub Code Button") link on the main repository web page or by running the following command:
     ```
     git clone https://github.com/ugo-emekauwa/hx-api-token-manager
     ```
