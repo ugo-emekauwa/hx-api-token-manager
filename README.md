@@ -1,10 +1,16 @@
-# Cisco HyperFlex API Token Manager
+<h1 align="center">Cisco HyperFlex API Token Manager</h1>
+
+<br>
+<p align="center">
+  <img alt="Cisco HyperFlex API Token Manager Title Image" title="Cisco HyperFlex API Token Manager Title Image" src="./assets/Cisco_HyperFlex_API_Token_Manager_Title_Graphic.png">
+</p>  
+<br>
+<p align="center">
+  The Cisco HyperFlex API Token Manager is a solution to simplify authentication when automating or integrating with Cisco HyperFlex storage systems. Cisco HyperFlex API Token Manager provides the ability to automate the creation, validation and renewal of HyperFlex API security tokens. Basic administration of HyperFlex API security tokens is also available with easy to use Python functions for obtaining, refreshing, revoking, and validating tokens.
+</p>
+<br>
 
 [![published](https://static.production.devnetcloud.com/codeexchange/assets/images/devnet-published.svg)](https://developer.cisco.com/codeexchange/github/repo/ugo-emekauwa/hx-api-token-manager)
-
-Cisco HyperFlex API Token Manager provides the ability to automate the creation, validation and renewal of HyperFlex API tokens. Basic administration of HyperFlex API tokens is also available with easy to use Python functions that simplify obtaining, refreshing, revoking, and validating tokens.
-
-The Cisco HyperFlex API Token Manager can be used as a solution to work with the HyperFlex AAA (Authentication, Authorization and Accounting) API rate limit introduced in HyperFlex 4.0(2a).
 
 ## Prerequisites:
 1. Python 3 installed, which can be downloaded from [https://www.python.org/downloads/](https://www.python.org/downloads/).
@@ -324,11 +330,11 @@ The Cisco HyperFlex API Token Manager is part of the automation solution used to
 Cisco dCloud is available at [https://dcloud.cisco.com](https://dcloud.cisco.com), where product demonstrations and labs can be found in the Catalog.
 
 ## Related Tools:
-Here are similar tools to help manage Cisco HyperFlex training, demonstration and development environments.
-- [Cisco HyperFlex Datastore Safeguard](https://github.com/ugo-emekauwa/hx-datastore-safeguard)
-- [Cisco HyperFlex Datastore Cleanup](https://github.com/ugo-emekauwa/hx-datastore-cleanup)
-- [HyperFlex Notification Tool for Cisco Intersight](https://github.com/ugo-emekauwa/hyperflex-notification-tool)
+Here are similar tools to help administer and manage Cisco HyperFlex and UCS environments.
+- [Cisco IMM Automation Tools](https://github.com/ugo-emekauwa/cisco-imm-automation-tools)
 - [HyperFlex Edge Automated Deployment Tool for Cisco Intersight](https://github.com/ugo-emekauwa/hx-auto-deploy)
+- [HyperFlex Notification Tool for Cisco Intersight](https://github.com/ugo-emekauwa/hyperflex-notification-tool)
+- [HyperFlex HTML Plug-In Automated Installer](https://github.com/ugo-emekauwa/hx-html-plugin-auto-installer)
 
 ## Author:
 Ugo Emekauwa
