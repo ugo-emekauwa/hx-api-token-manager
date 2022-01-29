@@ -18,7 +18,7 @@
     ```
     git clone https://github.com/ugo-emekauwa/hx-api-token-manager
     ```
-3. Install the required Python modules **requests** and **urllib3**. The requirements.txt file in the repository can be used by running the following command:
+3. Install the required Python modules **requests** and **urllib3**. The requirements.txt file in the repository can be used for installation by running the following command:
     ```
     python -m pip install -r requirements.txt
     ```
